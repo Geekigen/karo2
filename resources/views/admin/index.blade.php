@@ -14,10 +14,7 @@
     </div>
   </a>
 </div>
-<div>
-  <h2>Student Filter</h2>
-  @livewire('student-filter-component')
-</div>
+
 
     <div class="flex justify-center ">
         <!-- Student Form -->
@@ -61,7 +58,7 @@ href="{{ route('fee.portal') }}"
 </a>
 <a
 class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mb-4"
-href="/download"
+href="{{ route('statement.portal') }}"
 >
 <span
   class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent"
@@ -71,7 +68,7 @@ href="/download"
 </a>
 <a
 class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mb-4"
-href="/download"
+href="/announcement/portal"
 >
 <span
   class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent"
@@ -81,12 +78,22 @@ href="/download"
 </a>
 <a
 class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mb-4"
-href="/download"
+href="/blog"
 >
 <span
   class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent"
 >
   Write a Blog
+</span>
+</a>
+<a
+class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mb-4"
+href="/expenses"
+>
+<span
+  class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent"
+>
+  Record expenses
 </span>
 </a>
 </div>

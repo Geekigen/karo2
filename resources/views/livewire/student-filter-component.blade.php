@@ -1,25 +1,26 @@
-<div>
-    <input wire:model="adm" type="text" placeholder="Admission Number">
+<div class="p-4">
+    <input wire:model="adm" type="text" placeholder="Admission Number" class="w-64 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
     
-    <table>
+    <table class="mt-4 w-full bg-white border border-gray-300">
         <thead>
             <tr>
-                <th>Admission Number</th>
-                <th>Name</th>
-                <th>Grade</th>
-                <th>Action</th>
+                <th class="px-4 py-2 font-medium text-gray-700">Admission Number</th>
+                <th class="px-4 py-2 font-medium text-gray-700">Name</th>
+                <th class="px-4 py-2 font-medium text-gray-700">Grade</th>
+                <th class="px-4 py-2 font-medium text-gray-700">Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($students as $student)
             <tr>
-                <td>{{ $student->adm }}</td>
-                <td>{{ $student->name }}</td>
-                <td>{{ $student->grade }}</td>
-                <td><a wire:click="viewStudentDetails({{ $student->id }})" href="#">View Details</a></td>
+                <td class="px-4 py-2">{{ $student->adm }}</td>
+                <td class="px-4 py-2">{{ $student->name }}</td>
+                <td class="px-4 py-2">{{ $student->grade }}</td>
+                <td class="px-4 py-2">
+                    <a wire:click="viewStudentDetails({{ $student->id }})" href="#" class="text-blue-500 hover:text-blue-700">Payment Details</a>
+                </td>
             </tr>
-        @endforeach
+            @endforeach
         </tbody>
     </table>
 </div>
-
